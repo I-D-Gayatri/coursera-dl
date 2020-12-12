@@ -79,7 +79,6 @@ def release_check():
     if env.version in tags:
         raise Exception("Already released v. %r" % env.version)
 
-
 @task
 def release():
     """Release a new version"""
